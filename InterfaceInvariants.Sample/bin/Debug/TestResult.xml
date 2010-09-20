@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="/home/greg/Projects/InterfaceInvariantsAddIn/InterfaceInvariants.Sample/bin/Debug/InterfaceInvariants.Sample.dll" total="18" errors="6" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-09-20" time="11:57:06">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.1433" os-version="Unix 2.6.32.24" platform="Unix" cwd="/home/greg/NUnit-2.5.7.10213/bin/net-2.0" machine-name="goblin" user="greg" user-domain="goblin" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="/home/greg/Projects/InterfaceInvariantsAddIn/InterfaceInvariants.Sample/bin/Debug/InterfaceInvariants.Sample.dll" executed="True" result="Failure" success="False" time="1.186" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="InterfaceInvariants" executed="True" result="Failure" success="False" time="1.173" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Sample" executed="True" result="Failure" success="False" time="1.153" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="SimpleKeyValue" executed="True" result="Failure" success="False" time="0.857" asserts="0">
+                <results>
+                  <test-suite type="TestSuite" name="SimpleKeyValueTests" executed="True" result="Failure" success="False" time="0.848" asserts="0">
+                    <results>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.055" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.014" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.012" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.DictionarySimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+                        <failure>
+                          <message><![CDATA[  Expected: <System.ArgumentNullException>
+  But was:  null
+]]></message>
+                          <stack-trace><![CDATA[at InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests.InsertThrowsArgumentNullExceptionWhenValueIsNull () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.ListSimpleKeyValue(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.105" asserts="0" />
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.007" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="InterfaceInvariants.Sample.SimpleKeyValue.shitbird(InterfaceInvariants.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.MissingMethodException : Cannot create an abstract class 'InterfaceInvariants.Sample.SimpleKeyValue.shitbird'.]]></message>
+                          <stack-trace><![CDATA[at System.Activator.CheckAbstractType (System.Type type) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type, Boolean nonPublic) [0x00000] in <filename unknown>:0
+at System.Activator.CreateInstance (System.Type type) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator.TryReflections (System.Type t) [0x00000] in <filename unknown>:0
+at InterfaceInvariants.Framework.ObjectLocator+<GetHandler>c__AnonStorey0.<>m__1 () [0x00000] in <filename unknown>:0
+at InterfaceInvariants.AddIn.InstanceTestMethod.get_Fixture () [0x00000] in <filename unknown>:0
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
