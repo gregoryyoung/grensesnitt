@@ -1,0 +1,7 @@
+This is a testing plugin for NUnit.
+
+What it does is allows you to specify tests that act upon an interface. When youdo this, it will automatically find any implementors of that interface and will run your tests against an instance of that object. I have been writing tests like this for years and finally got sick of creating the base classes in order to make them work. The general idea is that ALL implementors must meet certain invariants (consider a list, when I add to it I should be able to get that item regardless of internal implementation).
+
+Hope this helps some people.
+
+Greg
