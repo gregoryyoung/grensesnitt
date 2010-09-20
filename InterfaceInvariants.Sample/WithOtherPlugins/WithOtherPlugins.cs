@@ -19,18 +19,21 @@ namespace InterfaceInvariants.Sample
 			return (i + 12) + (j - 12); //yeeeeeaaaah
 		}
 	}
-	
-/*	[InterfaceSpecification]
-	public class WithOtherPlugins : AppliesToAll<ICanAdd>
-	{
-		[TestCase(1,2, Result=3)]
-		[TestCase(-1,2, Result=1)]
-		[TestCase(0,0, Result=0)]
-		public int CanAddOrSomething(int x, int y) {
-			return subject.Add(x, y);
-		}
-	}
-	not working yet gosh darn it! MUST HAVE CHAINING!
+
+    [InterfaceSpecification]
+    public class WithOtherPlugins : AppliesToAll<ICanAdd>
+    {
+        [TestCase(1, 2, 3)]
+        [TestCase(-1, 2, 1)]
+        [TestCase(0, 0, 0)]
+        public void CanAddOrSomething(int x, int y, int r)
+        {
+            Assert.AreEqual(subject.Add(x, y), r);
+        }
+    }
+    
+    /*
+    not working yet gosh darn it! MUST HAVE CHAINING!
 	*/
 }
 
