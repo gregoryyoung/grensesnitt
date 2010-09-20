@@ -9,7 +9,7 @@ namespace InterfaceInvariants.Sample.SimpleKeyValue
 		private SortedList<string, object> list = new SortedList<string, object>();
 		
 		public void Insert(string key, object val){
-			if(key == null) throw new ArgumentNullException();
+            if (val == null) throw new ArgumentNullException("val");
 			list.Add(key, val);
 		}
 		public object GetByKey(string key) {
