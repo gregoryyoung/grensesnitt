@@ -18,7 +18,7 @@ namespace grensesnitt.Sample
 	}
 	public class Adder2Broken : ICanAdd {
 		public int Add(int i, int j) {
-			return 0;
+			return i+j;
 		}
 	}
 	
