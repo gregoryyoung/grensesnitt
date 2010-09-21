@@ -1,94 +1,76 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" total="30" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-09-21" time="16:07:15">
-  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.1433" os-version="Unix 2.6.32.24" platform="Unix" cwd="/home/greg/Projects/grensesnitt/lib/NUnit-2.5.7.10213/bin/net-2.0" machine-name="goblin" user="greg" user-domain="goblin" />
+<test-results name="/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" total="24" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-09-21" time="19:04:28">
+  <environment nunit-version="2.5.7.10213" clr-version="2.0.50727.1433" os-version="Unix 2.6.32.24" platform="Unix" cwd="/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug" machine-name="goblin" user="greg" user-domain="goblin" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" executed="True" result="Success" success="True" time="1.221" asserts="0">
+  <test-suite type="Assembly" name="/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" executed="True" result="Success" success="True" time="0.370" asserts="0">
     <results>
-      <test-suite type="Namespace" name="grensesnitt" executed="True" result="Success" success="True" time="1.212" asserts="0">
+      <test-suite type="Namespace" name="grensesnitt" executed="True" result="Success" success="True" time="0.351" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Sample" executed="True" result="Success" success="True" time="1.211" asserts="0">
+          <test-suite type="Namespace" name="Sample" executed="True" result="Success" success="True" time="0.350" asserts="0">
             <results>
-              <test-suite type="Namespace" name="SimpleKeyValue" executed="True" result="Success" success="True" time="0.522" asserts="0">
+              <test-suite type="Namespace" name="SimpleKeyValue" executed="True" result="Success" success="True" time="0.271" asserts="0">
                 <results>
-                  <test-suite type="TestSuite" name="SimpleKeyValueTests" executed="True" result="Success" success="True" time="0.507" asserts="0">
+                  <test-suite type="TestSuite" name="SimpleKeyValueTests" executed="True" result="Success" success="True" time="0.270" asserts="0">
                     <results>
-                      <test-suite type="TestSuite" name="DictionarySimpleKeyValue" executed="True" result="Success" success="True" time="0.390" asserts="0">
+                      <test-suite type="TestSuite" name="DictionarySimpleKeyValue" executed="True" result="Success" success="True" time="0.192" asserts="0">
                         <results>
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.073" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.037" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.024" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.055" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.040" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.020" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.DictionarySimpleKeyValue)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
                         </results>
                       </test-suite>
-                      <test-suite type="TestSuite" name="ListSimpleKeyValue" executed="True" result="Success" success="True" time="0.093" asserts="0">
+                      <test-suite type="TestSuite" name="ListSimpleKeyValue" executed="True" result="Success" success="True" time="0.071" asserts="0">
                         <results>
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.015" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.012" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.003" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
-                          <test-case name="grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue(grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.028" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.014" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests(grensesnitt.Sample.SimpleKeyValue.ListSimpleKeyValue)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
                         </results>
                       </test-suite>
                     </results>
                   </test-suite>
                 </results>
               </test-suite>
-              <test-suite type="TestSuite" name="WithOtherPlugins" executed="True" result="Success" success="True" time="0.499" asserts="0">
+              <test-suite type="TestSuite" name="WithOtherPlugins" executed="True" result="Success" success="True" time="0.079" asserts="0">
                 <results>
-                  <test-suite type="TestSuite" name="Adder1" executed="True" result="Success" success="True" time="0.031" asserts="0">
+                  <test-suite type="TestSuite" name="Adder1" executed="True" result="Success" success="True" time="0.075" asserts="0">
                     <results>
-                      <test-suite type="ParameterizedTest" name="CanAddOrSomething" executed="True" result="Success" success="True" time="0.027" asserts="0">
+                      <test-suite type="ParameterizedTest" name="CanAddOrSomething" executed="True" result="Success" success="True" time="0.070" asserts="0">
                         <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(0,0,0)" executed="True" result="Success" success="True" time="0.007" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(-1,2,1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(1,2,3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(0, 0, 0)" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(-1, 2, 1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(1, 2, 3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="CannAddOrSomethingWithReturn" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                        <results>
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(0, 0)" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(-1, 2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder1)(1, 2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestSuite" name="Adder2" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="CanAddOrSomething" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                        <results>
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(0, 0, 0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(-1, 2, 1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(1, 2, 3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                         </results>
                       </test-suite>
                       <test-suite type="ParameterizedTest" name="CannAddOrSomethingWithReturn" executed="True" result="Success" success="True" time="0.002" asserts="0">
                         <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(0,0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(-1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                        </results>
-                      </test-suite>
-                    </results>
-                  </test-suite>
-                  <test-suite type="TestSuite" name="Adder2" executed="True" result="Success" success="True" time="0.295" asserts="0">
-                    <results>
-                      <test-suite type="ParameterizedTest" name="CanAddOrSomething" executed="True" result="Success" success="True" time="0.228" asserts="0">
-                        <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(0,0,0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(-1,2,1)" executed="True" result="Success" success="True" time="0.005" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(1,2,3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                        </results>
-                      </test-suite>
-                      <test-suite type="ParameterizedTest" name="CannAddOrSomethingWithReturn" executed="True" result="Success" success="True" time="0.067" asserts="0">
-                        <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(0,0)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(-1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                        </results>
-                      </test-suite>
-                    </results>
-                  </test-suite>
-                  <test-suite type="TestSuite" name="Adder2Broken" executed="True" result="Success" success="True" time="0.172" asserts="0">
-                    <results>
-                      <test-suite type="ParameterizedTest" name="CanAddOrSomething" executed="True" result="Success" success="True" time="0.131" asserts="0">
-                        <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(0,0,0)" executed="True" result="Success" success="True" time="0.001" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(-1,2,1)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething(1,2,3)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                        </results>
-                      </test-suite>
-                      <test-suite type="ParameterizedTest" name="CannAddOrSomethingWithReturn" executed="True" result="Success" success="True" time="0.041" asserts="0">
-                        <results>
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(0,0)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(-1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
-                          <test-case name="grensesnitt.Sample.WithOtherPlugins.CannAddOrSomethingWithReturn(1,2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(0, 0)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(-1, 2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="grensesnitt.Sample.WithOtherPlugins(grensesnitt.Sample.Adder2)(1, 2)" executed="True" result="Success" success="True" time="0.000" asserts="0" />
                         </results>
                       </test-suite>
                     </results>

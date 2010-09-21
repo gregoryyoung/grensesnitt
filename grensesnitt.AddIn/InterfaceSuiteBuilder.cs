@@ -101,7 +101,7 @@ namespace grensesnitt.AddIn
 
                 //TestMethod test = new InstanceTestMethod(method, targetType, fixtureType, parms);
                 TestMethod test = BuildSingleTestMethod(new InstanceTestMethod(method, targetType, fixtureType),
-                                                        method, parentSuite, parms);
+                                                        method, parentSuite, parms, targetType);
 
                 methodSuite.Add(test);
             }
@@ -110,17 +110,10 @@ namespace grensesnitt.AddIn
         }
 
         public static TestMethod BuildSingleTestMethod(TestMethod testMethod, MethodInfo method, Test parentSuite,
-                                                       ParameterSet parms)
+                                                       ParameterSet parms, Type targetType)
         {
-            //NUnitTestMethod testMethod = new NUnitTestMethod(method);
 
-            string prefix = method.ReflectedType.FullName;
-
-            if (parentSuite != null)
-            {
-                prefix = parentSuite.TestName.FullName;
-                testMethod.TestName.FullName = prefix + "." + testMethod.TestName.Name;
-            }
+            string prefix = TestNameBuilder.GetFullTestName(method, targetType);
 
             if (CheckTestMethodSignatureAndDoSomePrettyFuckedUpStuffIfItHappensToMatchSomehow(testMethod, parms))
             {
@@ -143,9 +136,9 @@ namespace grensesnitt.AddIn
                 }
                 else if (parms.OriginalArguments != null)
                 {
-                    string name = MethodHelper.GetDisplayName(method, parms.OriginalArguments);
+                    string name = prefix + GetNameFor(parms.OriginalArguments);
                     testMethod.TestName.Name = name;
-                    testMethod.TestName.FullName = prefix + "." + name;
+                    testMethod.TestName.FullName = name;
                 }
 
                 if (parms.Ignored)
@@ -170,6 +163,16 @@ namespace grensesnitt.AddIn
 
             return testMethod;
         }
+		
+		private static string GetNameFor(object []ps) {
+			string ret = "(";
+			for(int i=0;i<ps.Length;i++) {
+				ret += ps[i].ToString();
+			    if(i<ps.Length - 1) ret += ", ";
+			}
+			ret += ")";
+			return ret;
+		}
 
 
         private static bool CheckTestMethodSignatureAndDoSomePrettyFuckedUpStuffIfItHappensToMatchSomehow(

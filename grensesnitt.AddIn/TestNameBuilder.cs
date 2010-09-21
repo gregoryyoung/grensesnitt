@@ -13,7 +13,7 @@ namespace grensesnitt.AddIn
 
     public static string GetFullTestName(MethodInfo method, Type targetType)
     {
-      return targetType.FullName + "(" + method.DeclaringType.FullName + ")";
+      return method.DeclaringType.FullName + "(" + targetType.FullName + ")";
     }
   }
 }

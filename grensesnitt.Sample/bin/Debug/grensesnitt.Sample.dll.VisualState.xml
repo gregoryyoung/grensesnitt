@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1002]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</TopNode>
-  <SelectedNode>[0-1002]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</SelectedNode>
+  <TopNode>[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</TopNode>
+  <SelectedNode>[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1002]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" Expanded="true" />
-    <Node UniqueName="[0-1003]grensesnitt" Expanded="true" />
-    <Node UniqueName="[0-1004]grensesnitt.Sample" Expanded="true" />
-    <Node UniqueName="[0-1005]grensesnitt.Sample.SimpleKeyValue" Expanded="true" />
+    <Node UniqueName="[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" Expanded="true" />
+    <Node UniqueName="[0-1044]grensesnitt" Expanded="true" />
+    <Node UniqueName="[0-1045]grensesnitt.Sample" Expanded="true" />
+    <Node UniqueName="[0-1046]grensesnitt.Sample.SimpleKeyValue" Expanded="true" />
     <Node UniqueName="[0-1000]grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests" Expanded="true" />
-    <Node UniqueName="[0-1001]grensesnitt.Sample.WithOtherPlugins" Expanded="true" />
+    <Node UniqueName="[0-1015]grensesnitt.Sample.WithOtherPlugins" Expanded="true" />
+    <Node UniqueName="[0-1016]WithOtherPlugins.Adder1" Expanded="true" />
+    <Node UniqueName="[0-1034]WithOtherPlugins.Adder2" Expanded="true" />
+    <Node UniqueName="[0-1025]WithOtherPlugins.Adder2Broken" Expanded="true" />
   </Nodes>
 </VisualState>

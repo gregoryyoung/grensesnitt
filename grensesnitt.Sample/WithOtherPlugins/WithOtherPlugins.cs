@@ -16,11 +16,6 @@ namespace grensesnitt.Sample
 		}
 		public void FooBar() {}
 	}
-	public class Adder2Broken : ICanAdd {
-		public int Add(int i, int j) {
-			return i+j;
-		}
-	}
 	
 	public class Adder2 : ICanAdd {
 		public int Add(int i, int j) {
