@@ -8,7 +8,7 @@ namespace InterfaceInvariants.AddIn
 
     public static string GetTestName(MethodInfo method, Type targetType)
     {
-      return targetType.Name + "(" + method.Name + ")";
+      return method.Name;
     }
 
     public static string GetFullTestName(MethodInfo method, Type targetType)

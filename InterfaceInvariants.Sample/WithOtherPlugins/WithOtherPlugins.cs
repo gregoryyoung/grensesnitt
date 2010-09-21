@@ -7,10 +7,18 @@ namespace InterfaceInvariants.Sample
 	public interface ICanAdd {
 		int Add(int i, int j); //dont ask me why you want different adders
 	}
-	
-	public class Adder1 : ICanAdd {
+	interface shitbar : ICanAdd {
+		void FooBar() ;
+	}
+	public class Adder1 : shitbar {
 		public int Add(int i, int j) {
 			return i + j;
+		}
+		public void FooBar() {}
+	}
+	public class Adder2Broken : ICanAdd {
+		public int Add(int i, int j) {
+			return 0;
 		}
 	}
 	
@@ -32,8 +40,5 @@ namespace InterfaceInvariants.Sample
         }
     }
     
-    /*
-    not working yet gosh darn it! MUST HAVE CHAINING!
-	*/
 }
 

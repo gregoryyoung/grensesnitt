@@ -23,30 +23,31 @@ namespace InterfaceInvariants.AddIn
                 IEnumerable<Type> matchingTypes = TypeFinder.GetTypesMatchingInterface(t.GetGenericArguments()[0]);
                 foreach (Type q in matchingTypes) Console.WriteLine("\n\n\nSearching for:" + q + "\n\n");
                 var builder = new NUnitTestCaseBuilder();
-                foreach (
-                    MethodInfo method in
-                        fixtureType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
-                {
-                    if (!method.IsConstructor)
+				
+		        NUnit.Core.TestSuite current = null;
+				foreach (Type toTest in matchingTypes) {
+	   	             current = new NUnit.Core.TestSuite(this.TestName.Name,toTest.Name);
+    				    foreach (
+                        MethodInfo method in
+                            fixtureType.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
                     {
-                        foreach (Type toTest in matchingTypes)
+		                    if (!method.IsConstructor)
                         {
-                            Console.Out.WriteLine("Meh {0}", method.GetParameters().Count());
                             if (method.GetCustomAttributes(typeof (TestCaseAttribute), true).Count() > 0)
                             {
-                                Add(BuildParameterizedMethodSuite(method, this, toTest, fixtureType));
+                                current.Add(BuildParameterizedMethodSuite(method, this, toTest, fixtureType));
                             }
                             else
                             {
-                                Add(new InstanceTestMethod(method, toTest, fixtureType));
+                                current.Add(new InstanceTestMethod(method, toTest, fixtureType));
                             }
                         }
-                    }
+					}
+					Add(current);
                 }
-            }
+            
+			}
         }
-
-        #region Methods: public
 
         public static Test BuildParameterizedMethodSuite(MethodInfo method, Test parentSuite, Type targetType,
                                                          Type fixtureType)
@@ -173,9 +174,6 @@ namespace InterfaceInvariants.AddIn
             return testMethod;
         }
 
-        #endregion
-
-        #region Methods: private
 
         private static bool CheckTestMethodSignatureAndDoSomePrettyFuckedUpStuffIfItHappensToMatchSomehow(
             TestMethod testMethod, ParameterSet parms)
@@ -316,12 +314,10 @@ namespace InterfaceInvariants.AddIn
             }
         }
 
-        #endregion
     }
 
     internal static class AssemblyExtension
     {
-        #region Methods: public
 
         public static object CreateInstance(this Assembly self, string typeName, params object[] args)
         {
@@ -335,12 +331,10 @@ namespace InterfaceInvariants.AddIn
             }
         }
 
-        #endregion
     }
 
     internal static class ObjectExtension
     {
-        #region Methods: public
 
         public static void Call(this object self, string methodName, params object[] args)
         {
@@ -420,7 +414,5 @@ namespace InterfaceInvariants.AddIn
                 throw e.InnerException;
             }
         }
-
-        #endregion
     }
 }
