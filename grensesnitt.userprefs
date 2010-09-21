@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="grensesnitt.AddIn/AssemblyLoader.cs" ctype="Workbench">
+    <Files>
+      <File FileName="grensesnitt.AddIn/GrensesnittAddin.cs" Line="35" Column="1" />
+      <File FileName="grensesnitt.AddIn/InterfaceSuiteBuilder.cs" Line="196" Column="1" />
+      <File FileName="grensesnitt.Framework/AppliesTo.cs" Line="2" Column="22" />
+      <File FileName="grensesnitt.AddIn/SearchPaths.cs" Line="12" Column="32" />
+      <File FileName="grensesnitt.AddIn/AssemblyLoader.cs" Line="17" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>
