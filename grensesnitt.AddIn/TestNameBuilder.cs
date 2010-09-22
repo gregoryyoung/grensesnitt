@@ -8,7 +8,7 @@ namespace grensesnitt.AddIn
 
     public static string GetTestName(MethodInfo method, Type targetType)
     {
-      return method.Name;
+      return method.Name + "(" + targetType.Name + ")";
     }
 
     public static string GetFullTestName(MethodInfo method, Type targetType)

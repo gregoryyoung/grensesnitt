@@ -113,7 +113,8 @@ namespace grensesnitt.AddIn
                                                        ParameterSet parms, Type targetType)
         {
 
-            string prefix = TestNameBuilder.GetFullTestName(method, targetType);
+            string prefix = TestNameBuilder.GetTestName(method, targetType);
+			var fullNamePrefix = TestNameBuilder.GetFullTestName(method, targetType);
 
             if (CheckTestMethodSignatureAndDoSomePrettyFuckedUpStuffIfItHappensToMatchSomehow(testMethod, parms))
             {
@@ -137,6 +138,7 @@ namespace grensesnitt.AddIn
                 else if (parms.OriginalArguments != null)
                 {
                     string name = prefix + GetNameFor(parms.OriginalArguments);
+					string fullName = fullNamePrefix + GetNameFor(parms.OriginalArguments);
                     testMethod.TestName.Name = name;
                     testMethod.TestName.FullName = name;
                 }

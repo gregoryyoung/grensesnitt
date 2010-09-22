@@ -9,7 +9,7 @@ namespace grensesnitt.AddIn
 			var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 			foreach(var assembly in assemblies) {
 				foreach(Type test in assembly.GetTypes()) {
-					if(test.IsClass && t.IsAssignableFrom(test) && t != test) {
+					if(!test.IsAbstract && test.IsClass && t.IsAssignableFrom(test) && t != test) {
 						ret.Add(test);
 					}
 				}

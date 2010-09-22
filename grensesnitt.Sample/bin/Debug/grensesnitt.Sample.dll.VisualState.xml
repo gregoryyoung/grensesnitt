@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
-  <TopNode>[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</TopNode>
-  <SelectedNode>[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</SelectedNode>
+  <TopNode>[0-1034]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll</TopNode>
+  <SelectedNode>[0-1027]CanAddOrSomething(Adder2)(0, 0, 0)</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1043]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" Expanded="true" />
-    <Node UniqueName="[0-1044]grensesnitt" Expanded="true" />
-    <Node UniqueName="[0-1045]grensesnitt.Sample" Expanded="true" />
-    <Node UniqueName="[0-1046]grensesnitt.Sample.SimpleKeyValue" Expanded="true" />
+    <Node UniqueName="[0-1034]/home/greg/Projects/grensesnitt/grensesnitt.Sample/bin/Debug/grensesnitt.Sample.dll" Expanded="true" />
+    <Node UniqueName="[0-1035]grensesnitt" Expanded="true" />
+    <Node UniqueName="[0-1036]grensesnitt.Sample" Expanded="true" />
+    <Node UniqueName="[0-1037]grensesnitt.Sample.SimpleKeyValue" Expanded="true" />
     <Node UniqueName="[0-1000]grensesnitt.Sample.SimpleKeyValue.SimpleKeyValueTests" Expanded="true" />
+    <Node UniqueName="[0-1008]SimpleKeyValueTests.ListSimpleKeyValue" Expanded="true" />
     <Node UniqueName="[0-1015]grensesnitt.Sample.WithOtherPlugins" Expanded="true" />
-    <Node UniqueName="[0-1016]WithOtherPlugins.Adder1" Expanded="true" />
-    <Node UniqueName="[0-1034]WithOtherPlugins.Adder2" Expanded="true" />
-    <Node UniqueName="[0-1025]WithOtherPlugins.Adder2Broken" Expanded="true" />
+    <Node UniqueName="[0-1017]grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething" Expanded="true" />
+    <Node UniqueName="[0-1025]WithOtherPlugins.Adder2" Expanded="true" />
+    <Node UniqueName="[0-1026]grensesnitt.Sample.WithOtherPlugins.CanAddOrSomething" Expanded="true" />
   </Nodes>
 </VisualState>
