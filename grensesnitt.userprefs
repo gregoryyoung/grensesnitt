@@ -2,16 +2,31 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
   <MonoDevelop.Ide.Workbench ActiveDocument="grensesnitt.Sample/WithOtherPlugins/WithOtherPlugins.cs" ctype="Workbench">
     <Files>
-      <File FileName="grensesnitt.AddIn/GrensesnittAddin.cs" Line="34" Column="1" />
-      <File FileName="grensesnitt.AddIn/InterfaceSuiteBuilder.cs" Line="171" Column="22" />
-      <File FileName="grensesnitt.Framework/AppliesTo.cs" Line="2" Column="22" />
-      <File FileName="grensesnitt.AddIn/SearchPaths.cs" Line="1" Column="1" />
-      <File FileName="grensesnitt.AddIn/AssemblyLoader.cs" Line="17" Column="10" />
-      <File FileName="grensesnitt.Sample/WithOtherPlugins/WithOtherPlugins.cs" Line="37" Column="29" />
-      <File FileName="grensesnitt.AddIn/TestNameBuilder.cs" Line="16" Column="71" />
-      <File FileName="grensesnitt.Sample/SimpleKeyValue/DictionarySimpleKeyValue.cs" Line="11" Column="4" />
-      <File FileName="grensesnitt.AddIn/InstanceTestMethod.cs" Line="11" Column="3" />
+      <File FileName="grensesnitt.Sample/SimpleKeyValue/DictionarySimpleKeyValue.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Sample/SimpleKeyValue/SimpleKeyValueTests.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Sample/WithOtherPlugins/WithOtherPlugins.cs" Line="31" Column="18" />
+      <File FileName="grensesnitt.AddIn/GrensesnittAddin.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.AddIn/InterfaceSuiteBuilder.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Framework/AppliesToAll.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Framework/AppliesTo.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Framework/GrensesnittObjectLocator.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.AddIn/TypeFinder.cs" Line="1" Column="1" />
+      <File FileName="grensesnitt.Sample/SimpleKeyValue/ListSimpleKeyValue.cs" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="grensesnitt.Sample" expanded="True">
+            <Node name="WithOtherPlugins" expanded="True">
+              <Node name="WithOtherPlugins.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

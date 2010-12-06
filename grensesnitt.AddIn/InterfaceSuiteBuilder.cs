@@ -16,12 +16,12 @@ namespace grensesnitt.AddIn
         public InterfaceSuiteBuilder(Type fixtureType)
             : base(fixtureType)
         {
-            IEnumerable<Type> types = GetInterfaceTypes(fixtureType);
+            var types = GetInterfaceTypes(fixtureType);
             foreach (Type t in types)
             {                
                 IEnumerable<Type> matchingTypes = TypeFinder.GetTypesMatchingInterface(t.GetGenericArguments()[0]);
 				
-		        NUnit.Core.TestSuite current = null;
+		        TestSuite current = null;
 				foreach (Type toTest in matchingTypes) {
 	   	             current = new NUnit.Core.TestSuite(this.TestName.Name,toTest.Name);
     				    foreach (

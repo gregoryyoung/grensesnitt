@@ -10,7 +10,7 @@ namespace grensesnitt.Framework
 		private static Dictionary<Type, Func<object>> map = new Dictionary<Type, Func<object>>();
 		
 		public static object GetInstance(Type t) {
-			return GetHandler(t)();
+			return GetHandler(t)(); 
 		}
 		
 		public static void HookAllTo(Func<Type, object> handler) {
