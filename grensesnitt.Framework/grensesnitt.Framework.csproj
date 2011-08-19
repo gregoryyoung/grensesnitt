@@ -41,7 +41,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="InterfaceSpecificationAttribute.cs" />
     <Compile Include="AppliesToAll.cs" />
     <Compile Include="AppliesTo.cs" />

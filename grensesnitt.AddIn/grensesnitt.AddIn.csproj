@@ -58,7 +58,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="InterfaceSuiteBuilder.cs" />
     <Compile Include="TestNameBuilder.cs" />
     <Compile Include="InstanceTestMethod.cs" />
