@@ -35,23 +35,32 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework">
+      <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+    <Reference Include="nunit.core">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\NUnit-2.5.7.10213\bin\net-2.0\framework\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.5.10.11092\tools\lib\nunit.core.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.core, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+    <Reference Include="nunit.core.interfaces">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\NUnit-2.5.7.10213\bin\net-2.0\lib\nunit.core.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.core.interfaces, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\NUnit-2.5.7.10213\bin\net-2.0\lib\nunit.core.interfaces.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.5.10.11092\tools\lib\nunit.core.interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="InterfaceSuiteBuilder.cs" />
     <Compile Include="TestNameBuilder.cs" />
     <Compile Include="InstanceTestMethod.cs" />
@@ -66,5 +75,8 @@
       <Project>{7C3378AC-DF04-48B1-95F6-15BCB052BF1A}</Project>
       <Name>grensesnitt.Framework</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
